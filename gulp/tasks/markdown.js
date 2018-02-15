@@ -17,16 +17,7 @@ gulp.task('markdown', ['layouts'], () => {
   const markdown = new MarkdownIt({html: true});
   var building = process.env.build === 'true';
   var meta = { title: 'Style Guide' };
-  var previews = new CodePreview({
-    projects: [
-      {
-        name: 'oxygen',
-        styles: [ 'http://oxygencss.com/styles/site.css' ],
-        scripts: [ 'http://oxygencss.com/styles/site.js' ],
-        beforeScripts: ''
-      }
-    ]
-  });
+  var previews = new CodePreview(config.previews);
 
   return gulp.src(config.src.glob('markdown'))
     .pipe(previews.extract())

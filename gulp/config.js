@@ -74,6 +74,17 @@ var config = {
   specs: {
     root: 'test/spec',
     glob: '*.spec.js'
+  },
+
+  previews: {
+    projects: [
+      {
+        name: 'oxygen',
+        styles: [ 'http://oxygencss.com/styles/site.css' ],
+        scripts: [ 'http://oxygencss.com/styles/site.js' ],
+        beforeScripts: ''
+      }
+    ]
   }
 };
 
