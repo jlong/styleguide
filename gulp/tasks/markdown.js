@@ -20,11 +20,10 @@ gulp.task('markdown', ['layouts'], () => {
   var previews = new CodePreview({
     projects: [
       {
-        name: 'admin',
-        ngApp: 'admin',
-        styles: [ '//assets1.uvcdn.com/pkg/admin-657d6b0cf54090a34e4a7957a3322db4.css' ],
-        scripts: [ '//assets1.uvcdn.com/pkg/shamrock-c828b072e385712ec7a906781cf6cc57.js' ],
-        beforeScripts: '<script>UV={};UV.AngularBootstrap={};UV.angularLocale={"locale":"en","strings":{}}</script>'
+        name: 'oxygen',
+        styles: [ 'http://oxygencss.com/styles/site.css' ],
+        scripts: [ 'http://oxygencss.com/styles/site.js' ],
+        beforeScripts: ''
       }
     ]
   });
