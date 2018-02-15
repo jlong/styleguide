@@ -14,7 +14,7 @@ const $ = gulpLoadPlugins();
 
 
 gulp.task('markdown', ['layouts'], () => {
-  const markdown = new MarkdownIt();
+  const markdown = new MarkdownIt({html: true});
   var building = process.env.build === 'true';
   var meta = { title: 'Style Guide' };
   var previews = new CodePreview({
