@@ -1,3 +1,17 @@
+// Named colors
+
+$blue: #3498db !global;
+$purple: #8e44ad !global;
+$gray: #bdc3c7 !global;
+$light-gray: #ecf0f1 !global;
+$medium-gray: darken($light-gray, 8%) !global;
+$gunmetal: #95a5a6 !global;
+$light-gunmetal: #bdc3c7 !global;
+$red-orange: #e74c3c !global;
+
+
+// Semantic colors
+
 $background-color: white !global;
 
 $text-color: #333 !global;
@@ -6,17 +20,10 @@ $loud-color: #000 !global;
 $heading-color: #000 !global;
 
 $reversed-text-color: white !global;
-$quiet-color: gray !global;
-$reversed-loud-color: black !global;
+$reversed-quiet-color: #eee !global;
+$reversed-loud-color: white !global;
 $reversed-heading-color: white !global;
 
 $border-color: silver !global;
 
-$accent-color: purple !global;
-
-$gray: #bdc3c7 !global;
-$light-gray: #ecf0f1 !global;
-$medium-gray: darken($light-gray, 8%) !global;
-$gunmetal: #95a5a6 !global;
-$light-gunmetal: #bdc3c7 !global;
-$red-orange: #e74c3c !global;
+$accent-color: $purple !global;

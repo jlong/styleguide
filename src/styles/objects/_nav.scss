@@ -5,8 +5,8 @@ $sg-nav-padding-vertical: 0.5 * $spacing-unit;
 $sg-nav-color: $text-color;
 $sg-nav-hover-color: $loud-color;
 $sg-nav-hover-background-color: $medium-gray;
-$sg-nav-selected-color: $loud-color;
-$sg-nav-selected-background-color: $gray;
+$sg-nav-selected-color: $reversed-loud-color;
+$sg-nav-selected-background-color: $blue;
 
 .sg-nav {
   margin-left: -$sg-nav-padding-horizontal;
