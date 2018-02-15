@@ -3,7 +3,6 @@ import gutil from 'gulp-util';
 import fs from 'fs';
 import path from 'path';
 import frontmatter from 'front-matter';
-// import pdc from 'pdc';
 import showdown from 'showdown';
 import config from '../config';
 import reload from '../util/reload';
@@ -28,22 +27,6 @@ gulp.task('markdown', ['layouts'], () => {
 
   return gulp.src(config.src.glob('markdown'))
     .pipe(previews.extract())
-
-    // .on('data', function(f) { console.log(String(f.contents)) })
-
-    // // With PDC
-    // .pipe($.data(function(file, cb) {
-    //   var content = frontmatter(String(file.contents));
-    //   var filename = path.join(config.tmp.path('layouts'), (content.layout || 'main') + '.hb');
-    //   var layout = fs.readFileSync(filename);
-    //   pdc(content.body, 'markdown-implicit_figures', 'html', ['+smart'], function(err, result) {
-    //     if (err) { cb(err); }
-    //     content.attributes['contents'] = result;
-    //     file.contents = new Buffer(layout);
-    //     cb(undefined, content.attributes);
-    //   });
-    // }))
-
     .pipe($.data(function(file) {
       var content = frontmatter(String(file.contents));
       var filename = path.join(config.tmp.path('layouts'), (content.layout || 'main') + '.hb');
