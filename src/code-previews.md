@@ -97,7 +97,7 @@ Which renders:
     <p>Hello world!</p>
   </snippet>
   <snippet type="text/css">
-    body { color: blue; }
+    body { color: red; }
   </snippet>
   <snippet type="text/javascript">
     console.log('Hello world!')
