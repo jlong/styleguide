@@ -1,0 +1,13 @@
+{
+  "name": "styleguide",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "ace-builds": "~1.2.3"
+  },
+  "overrides": {},
+  "devDependencies": {
+    "chai": "~3.4.2",
+    "mocha": "~2.3.4"
+  }
+}
