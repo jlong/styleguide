@@ -5,7 +5,7 @@
 
 1. If you haven't already installed [Node][1] and [NPM][2], [install them first][3]. You will need at least Node 0.12 or higher. Make sure NPM is up to date, too.
 
-2. Install Pandoc:
+2. ~~Install Pandoc~~:
 
         brew install pandoc
 
