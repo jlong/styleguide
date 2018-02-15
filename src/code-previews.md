@@ -146,18 +146,18 @@ Which renders with full syntax highlighting:
 
 Code previews can also contain additional JavaScript and Stylesheets by
 associating them with a project. This is done through the `project` attribute
-on the `example` tag. Here's how you would add an example for the Admin
-console:
+on the `example` tag. Here's how you would add an example for the "Oxygen"
+project:
 
 <example render="false">
-  <example project="admin">
+  <example project="oxygen">
     <button class="button">Button</button>
   </example>
 </example>
 
 Which renders:
 
-<example project="admin">
+<example project="oxygen">
   <button class="button">Button</button>
 </example>
 
