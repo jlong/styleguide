@@ -1,0 +1,37 @@
+@for $i from 0 through 6 {
+    .p#{$i} {
+        padding: $unit * $i;
+    }
+}
+@for $i from 0 through 6 {
+    .py#{$i} {
+        padding-top: $unit * $i;
+        padding-bottom: $unit * $i;
+    }
+}
+@for $i from 0 through 6 {
+    .px#{$i} {
+        padding-left: $unit * $i;
+        padding-right: $unit * $i;
+    }
+}
+@for $i from 0 through 6 {
+    .pt#{$i} {
+        padding-top: $unit * $i;
+    }
+}
+@for $i from 0 through 6 {
+    .pr#{$i} {
+        padding-right: $unit * $i;
+    }
+}
+@for $i from 0 through 6 {
+    .pb#{$i} {
+        padding-bottom: $unit * $i;
+    }
+}
+@for $i from 0 through 6 {
+    .pl#{$i} {
+        padding-left: $unit * $i;
+    }
+}
