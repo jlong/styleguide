@@ -92,7 +92,7 @@
 
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
-<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/node_modules/jquery/dist/jquery.js"></script>
 <script src="/bower_components/ace-builds/src/ace.js"></script>
 <script src="/bower_components/ace-builds/src/theme-xcode.js"></script>
 <script src="/bower_components/ace-builds/src/mode-html.js"></script>

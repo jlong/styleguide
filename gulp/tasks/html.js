@@ -16,7 +16,7 @@ gulp.task('layouts', ['styles', 'scripts'], () => {
     .pipe($.preprocess())
     .pipe($.if(building, assets))
     // .pipe($.if(building, $.if('*.js', $.uglify())))
-    .pipe($.if(building, $.if('*.css', $.minifyCss({compatibility: '*'}))))
+    // .pipe($.if(building, $.if('*.css', $.minifyCss({compatibility: '*'}))))
     .pipe($.if(building, assets.restore()))
     .pipe($.if(building, $.useref()))
 

@@ -1,14 +1,14 @@
+@import 'base/index';
+
+@import 'modifiers/index';
+
 // Configuration
-@import "lib/colors";
-@import "lib/fonts";
 @import "lib/media-queries";
 @import "config";
 
 // Utilities
 @import "lib/utilities";
 
-// Reset
-@import "lib/reset";
 html, body { background: $background-color; }
 
 // Typography

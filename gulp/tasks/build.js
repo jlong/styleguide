@@ -19,7 +19,7 @@ gulp.task('build', (cb)=> {
   runSequence(
     'build-start',
     'clean',
-    ['lint', 'html', 'images', 'fonts', 'extras'],
+    ['lint', 'html', 'images', 'extras'],
     'build-finish',
     cb
   );
